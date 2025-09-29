@@ -4,7 +4,7 @@
 This project demonstrates the development of an **autonomous rover system** that integrates **computer vision** and **robotics simulation**.  
 It is divided into two major modules:  
 
-1. **Vision** – A custom-trained **YOLOv8 model** for rover/environment object detection.  
+1. **Vision** – A custom-trained **YOLOv8 model** for environment object detection.  
 2. **Simulation** – A **ROS2 + Gazebo** based rover simulation with navigation and motion control.  
 
 The goal is to create a rover capable of **perceiving its environment and moving autonomously**, showcasing a full-stack robotics workflow.
@@ -12,8 +12,8 @@ The goal is to create a rover capable of **perceiving its environment and moving
 ---
 
 ## 🎯 Objectives
-- Build a **custom dataset** of rover/environment images using DSLR.  
-- Train a **YOLOv8-based detection model** to recognize rovers and obstacles.  
+- Build a **custom dataset** of obstacle images using DSLR.  
+- Train a **YOLOv8-based detection model** to recognize obstacles.  
 - Integrate the detection pipeline into a **ROS2 simulation**.  
 - Simulate **autonomous navigation** in Gazebo with object-aware behavior.  
 
