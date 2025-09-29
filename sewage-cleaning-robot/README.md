@@ -99,4 +99,8 @@ Our robot automates sewage cleaning to:
 * Detection accuracy: **87.25% precision, 83.50% recall**
 * Suction system prevents **clogging** by mixing sludge dynamically.
 
+## Manhole Detection with Model
+
+![WhatsApp Image 2025-09-29 at 18 18 05_58cdaaff](https://github.com/user-attachments/assets/ab70831f-c481-4d8e-9d8f-bb8dc47ca017)
+
 ---
