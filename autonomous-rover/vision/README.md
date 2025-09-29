@@ -110,7 +110,7 @@ After downloading, the dataset folder will contain the standard YOLOv8 layout:
 | model         |                          `yolov8s.pt` | base Model used                  |
 | epochs        |                                  `50` | number of training epochs        |
 | imgsz         |                                 `640` | input resize (YOLO image size)   |
-| batch         |                                  `18` | batch size used during training  |
+| batch         |                                  `16` | batch size used during training  |
 | optimizer     |                               `AdamW` | optimizer from notebook          |
 | lr            |                            `0.001667` | initial learning rate            |
 | momentum      |                                 `0.9` |          -                       |
