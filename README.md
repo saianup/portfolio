@@ -24,11 +24,12 @@ This portfolio showcases my projects, experiments, and learning in robotics, bot
 
 ---
 
-### 3. 👁️ YOLOv8 Vision Inference
+### 3. 👁️ Interactive Voice Vision Robot
 - Deployed **YOLOv8 model** for real-time object detection.  
-- Integrated with Intel RealSense camera for depth perception.  
+- Integrated with Intel RealSense camera for depth perception.
+- Deployed **Whisper AI model** for Speech to Text.
 - ✅ **Tech:** Python, OpenCV, PyTorch, ROS 2  
-- [🔗 Project folder](./vision-yolov8)
+- [🔗 Project folder](./Interactive-voice-vision-robot)
 
 ---
 
