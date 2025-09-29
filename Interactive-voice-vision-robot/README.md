@@ -34,3 +34,7 @@ The system will:
 - **Libraries**: `opencv-python`, `sounddevice`, `pyttsx3`, `numpy`, `pyrealsense2`, `ultralytics`
 
 ---
+
+## Flowchart 
+
+<img width="1051" height="456" alt="image" src="https://github.com/user-attachments/assets/05472ba8-aff6-4549-8ab6-1f80159e2b58" />
