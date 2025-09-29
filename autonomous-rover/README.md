@@ -42,22 +42,3 @@ The goal is to create a rover capable of **perceiving its environment and moving
 
 📂 See [Simulation README](simulation/README.md) for details.  
 
----
-
-## 📈 Results
-
-### ✅ Vision
-- mAP50: XX%  
-- Sample predictions available in `/vision/outputs/sample_predictions`.  
-
-### ✅ Simulation
-- Rover successfully spawns in Gazebo world.  
-- Executes navigation commands and motion planning.  
-
-*(Screenshots and gifs can be added here once available)*
-
----
-
-## 🚀 How to Run
-
-Yet to Complete 
