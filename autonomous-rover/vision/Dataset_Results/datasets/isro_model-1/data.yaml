@@ -1,0 +1,13 @@
+names:
+- box
+- crater
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: isro_model
+  url: https://universe.roboflow.com/isro-r6oka/isro_model/dataset/1
+  version: 1
+  workspace: isro-r6oka
+test: ../test/images
+train: ../train/images
+val: ../valid/images
