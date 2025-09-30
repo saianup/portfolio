@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<robot name="agvrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Define materials -->
+  <material name="Green">
+    <color rgba="0.0 1.0 0.0 1.0"/>
+  </material>
+
+  <material name="Black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="Grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <material name="Blue">
+    <color rgba="0.0 0.0 1.0 1.0"/>
+  </material>
+
+  <!-- Base link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.000163 0 0.049721" rpy="0 0 0"/>
+      <mass value="32.553"/>
+      <inertia ixx="0.118177" iyy="0.2506" izz="0.341546" ixy="0.0" iyz="0.0" ixz="-0.000103"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="Green"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference="base_link">
+    <material>Gazebo/Green</material>
+  <mu1>0.1</mu1>
+  <mu2>0.1</mu2>
+  <self_collide>true</self_collide>
+  <gravity>true</gravity>
+  </gazebo>
+
+  <!-- Lidar top link -->
+  <link name="lidar_top_1">
+    <inertial>
+      <origin xyz="0 0 0.023" rpy="0 0 0"/>
+      <mass value="0.341"/>
+      <inertia ixx="0.000081" iyy="0.000081" izz="0.000147" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.0442 0.000404 -0.104" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/lidar_top_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="Blue"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.0442 0.000404 -0.104" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/lidar_top_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+<gazebo reference="lidar_top_1">
+    <material>Gazebo/Blue</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  </gazebo>
+  <!-- Lidar bottom link -->
+  <link name="lidar_bottom_1">
+    <inertial>
+      <origin xyz="0.025944 -0.000088 0.01492" rpy="0 0 0"/>
+      <mass value="0.032842"/>
+      <inertia ixx="0.00001" iyy="0.000025" izz="0.000029" ixy="0.0" iyz="0.0" ixz="-0.000002"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.085" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/lidar_bottom_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="Grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.085" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/lidar_bottom_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+<gazebo reference="lidar_bottom_1">
+    <material>Gazebo/Grey</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  </gazebo>
+
+  <!-- Right wheel link -->
+  <link name="right_wheel_1">
+    <inertial>
+      <origin xyz="0 -0.0075 0" rpy="0 0 0"/>
+      <mass value="0.924806"/>
+      <inertia ixx="0.000595" iyy="0.001156" izz="0.000595" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0.1 -0.05" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0.1 -0.05" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <gazebo reference="right_wheel_1">
+    <material>Gazebo/Black </material>
+  <mu1>1500</mu1>
+  <mu2>1500</mu2>
+  <self_collide>true</self_collide>
+  </gazebo>
+  <!-- Left wheel link -->
+  <link name="left_wheel_1">
+    <inertial>
+      <origin xyz="0 0.0075 0" rpy="0 0 0"/>
+      <mass value="0.924806"/>
+      <inertia ixx="0.000595" iyy="0.001156" izz="0.000595" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.1 -0.05" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.1 -0.05" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find agvrobot_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+<gazebo reference="left_wheel_1">
+    <material>Gazebo/Black </material>
+  <mu1>1500</mu1>
+  <mu2>1500</mu2>
+  <self_collide>true</self_collide>
+  </gazebo>
+  <!-- Joints -->
+  <joint name="lidar_joint" type="continuous">
+    <origin xyz="0.0442 -0.000404 0.019" rpy="0 0 0"/>
+    <parent link="lidar_bottom_1"/>
+    <child link="lidar_top_1"/>
+    <axis xyz="0.0 0.0 1.0"/>
+  </joint>
+
+  <joint name="rigid_5" type="fixed">
+    <origin xyz="0.0 0.0 0.085" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="lidar_bottom_1"/>
+  </joint>
+
+  <joint name="right_joint" type="continuous">
+    <origin xyz="0.0 -0.1 0.05" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="right_wheel_1"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+
+  <joint name="left_joint" type="continuous">
+    <origin xyz="0.0 0.1 0.05" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="left_wheel_1"/>
+    <axis xyz="0.0 1.0 0.0"/>
+  </joint>
+
+
+<gazebo>
+	        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+	            <!-- Wheel info-->
+    <updateRate>100</updateRate>
+              <left_joint>left_joint</left_joint>
+              <right_joint>right_joint</right_joint>
+
+	            <wheel_separation>0.2</wheel_separation>
+
+	            <wheel_diameter>0.1</wheel_diameter>
+              <!-- Limits-->
+
+	            <max_wheel_torque>80</max_wheel_torque>
+
+	            <max_wheel_acceleration>1.0</max_wheel_acceleration>
+ 
+               <command_topic>cmd_vel</command_topic>
+ <!-- Output-->
+              
+              <odometry_topic>odom</odometry_topic>
+              
+	            <odometry_frame>odom</odometry_frame>
+
+	            <robot_base_frame>base_link</robot_base_frame>
+
+	 
+
+	            <publish_odom>true</publish_odom> 
+
+	            <publish_odom_tf>true</publish_odom_tf> 
+
+	            <publish_wheel_tf>true</publish_wheel_tf> 
+
+	 
+
+	        </plugin>
+  
+	     </gazebo>
+
+<gazebo reference="lidar_top_1">
+
+        <sensor name="laser" type="ray">
+            <pose> 0 0 0 0 0 0 </pose>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <min_angle>-3.14</min_angle>
+                        <max_angle>3.14</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.3</min>
+                    <max>12</max>
+                </range>
+            </ray>
+            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <argument>~/out:=scan</argument>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>lidar_top_1</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+  
+</robot>

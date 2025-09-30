@@ -1,0 +1,19 @@
+agvrobot_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  lidar joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lidar joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  right_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: right_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  left_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: left_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
