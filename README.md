@@ -15,12 +15,12 @@ This portfolio showcases my projects, experiments, and learning in robotics, bot
 
 ---
 
-### 2. ⚙️ Motor Control on Raspberry Pi
-- Controlled **DC motors with encoders** using Raspberry Pi 4.  
-- Implemented **PID feedback loop** for stable velocity control.  
-- Visualized encoder counts + motor response in ROS 2.  
-- ✅ **Tech:** Raspberry Pi 4, Python, ROS 2, PID  
-- [🔗 Project folder](./motor-control-pi)
+### 2. ⚙️ Autonomous Mobile Robot (Gazebo)
+- Implemented fully autonomous mobile robot in Gazebo environment with ROS2 Humble.
+- Differential Drive Robot
+- Visualized SLAM and Nav2 frameworks. 
+- ✅ **Tech:** Python, ROS 2  
+- [🔗 Project folder](./autonomous-mobile-robot)
 
 ---
 
@@ -52,8 +52,8 @@ This portfolio showcases my projects, experiments, and learning in robotics, bot
 
 ## 🛠️ Skills
 
-- **Languages & Frameworks:** Python, C++, ROS 2, OpenCV, PyTorch  
-- **Robotics Concepts:** Localization, SLAM, PID control, Computer Vision, Motion Planning  
+- **Languages & Frameworks:** Python, C++, C, ROS 2, OpenCV
+- **Robotics Concepts:** Localization, SLAM, PID control, Computer Vision, Motion Planning, Kinematics and Dynamics.
 - **Tools:** Gazebo, RViz, Docker (learning), Git, Ubuntu  
 
 ---
