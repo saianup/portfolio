@@ -58,7 +58,7 @@ The work was developed as part of a mini-project in **Robotics and Automation, M
 ## 🚀 How to Run
 
 ### 1. Micro-ROS Agent Setup  
-Follow the instructions in the [Sensors Repo README]([https://github.com/saianup/portfolio/tree/main/sensors](https://github.com/saianup/Sens-O-ROS/blob/main/README.md)) to build and run the **micro-ROS agent**.  
+Follow the instructions in the [Sensoros Repo README](https://github.com/saianup/Sens-O-ROS/blob/main/README.md) to build and run the **micro-ROS agent**.  
 This creates the bridge between ESP32 and ROS 2.
 
 ```bash
