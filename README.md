@@ -5,32 +5,48 @@ This portfolio highlights my projects, experiments, and hands-on learning in bot
 
 ---
 
+## 🛠️ Skills
+
+- Programming Languages: Python, C++, C
+- Robotics Frameworks & Middleware: ROS, ROS 2, micro-ROS, OpenCV
+- Embedded & Edge Computing: ESP32, NVIDIA Jetson (Orin / Xavier)
+- Perception & AI: YOLOv8, Machine Vision, Depth Cameras (Intel RealSense, Orbbec Astra)
+- Control Systems: PID Control, Kalman Filtering, Extended Kalman Filter (EKF)
+- Navigation & Robotics Algorithms: Localization, Differential Drive Kinematics, DWA Local Planning
+- Simulation Tools: Gazebo, RViz, RoboAnalyzer
+- Containerization & Systems: Docker, ROS2 DDS Configuration, Linux
+- CAD Software: SolidWorks, Fusion 360
+- Circuit Design & Prototyping: Proteus, Wokwi
+- Core Robotics Concepts: Robot Kinematics, Robot Dynamics, Sensor Fusion
+
+---
+
 ## 📂 Projects
 
 ### 1. Self-Localization Robot
 - Built a mobile robot capable of **precise self-localization** using wheel encoders + IMU.  
 - Integrated data via **micro-ROS** on ESP32 and applied **Extended Kalman Filter (EKF)** with `robot_localization` package in ROS 2.  
 - **Tech:** ROS 2 Humble, micro-ROS, EKF, RViz, Gazebo  
-- [🔗 Project folder](./self-localization-robot)
+- 🔗 https://github.com/saianup/self_localisation_robot
 
 ---
 
 ### 2. Autonomous Mobile Robot (Gazebo)
 - Implemented fully autonomous mobile robot in Gazebo environment with ROS2 Humble.
 - Differential Drive Robot
-- SLAM and full autonomous navigation not included (previous ROS 1 implementation not available).
+- SLAM and full autonomous navigation not included.
 - **Tech:** Python, ROS 2  
-- [🔗 Project folder](./autonomous-mobile-robot)
+- 🔗 https://github.com/saianup/autonomous_mobile_robot
 
 ---
 
 ### 3. Interactive Voice Vision Robot
 - Deployed **YOLOv8 model** for real-time object detection.  
 - Integrated with Intel RealSense camera for depth perception.
-- Deployed **Whisper AI model** for Speech to Text.
+- Deployed **Whisper AI model / Google Speech Recognition** for Speech to Text.
 - Completed design of manipulator.
 - **Tech:** Python, OpenCV, PyTorch, Realsense, ROS 2, YOLOv8, Whisper
-- [🔗 Project folder](./Interactive-voice-vision-robot)
+- 🔗 https://github.com/saianup/Interactive_Voice_Vision_Arm
 
 ---
 
@@ -39,7 +55,7 @@ This portfolio highlights my projects, experiments, and hands-on learning in bot
 - Simulated rover in Gazebo and implemented kinematics.  
 - Integrated YOLOv8 for obstacle detection + Intel RealSense depth mapping.  
 - **Tech:** ROS 2, Gazebo, RViz, YOLOv8  
-- [🔗 Project folder](./autonomous-rover)
+- 🔗 https://github.com/saianup/autonomous_rover
 
 ---
 
@@ -47,21 +63,49 @@ This portfolio highlights my projects, experiments, and hands-on learning in bot
 - Built a YOLOv8 model to detect sewage tanks on roads.  
 - Programmed gripper actuation mechanism in ROS.  
 - **Tech:** ROS 2, Python, OpenCV, YOLOv8  
-- [🔗 Project folder](./sewage-cleaning-robot)
+- 🔗 https://github.com/saianup/sewage_cleaning_robot
 
 ---
 
-## 🛠️ Skills
 
-- **Programming Languages** Python, C++, C
-- **Robotics Frameworks:** ROS, Micro ROS, OpenCV
-- **Control Systems:** PID, Kalman Filtering
-- **Simulation Tools:** Gazebo, RoboAnalyzer
-- **CAD Software:** Solidworks, Fusion 360
-- **Circuit Design:** Proteus, Wokwi
-- **Core Concepts:** Robot Kinematics, Robot Dynamics, Machine Vision
+### 6. MAX Robot Control
+
+- Teleoperation and control pipeline for MAX robot using ROS2, joystick interface, and velocity command publishing.
+- Tech: ROS2, teleop_twist_joy, Jetson, Python
+- 🔗 https://github.com/saianup/Maxrobot_control
 
 ---
+
+### 7. Orbbec Astra S ROS2 Driver
+
+- Custom ROS2 wrapper enabling Astra S camera usage in ROS2 environments where official support is unavailable.
+- Tech: ROS2, C++, camera drivers, DDS
+- 🔗 https://github.com/saianup/Orbbec_Astra_S_ROS2_Driver
+
+---
+
+### 8. Custom DWA Local Planner
+
+- Implementation of a custom Dynamic Window Approach (DWA) planner for mobile robot navigation.
+- Tech: ROS, Python/C++, motion planning
+- 🔗 https://github.com/saianup/Custom_DWA
+
+---
+
+### 9. ZED2i ROS2 Docker Setup
+
+- Containerized ROS2 environment for ZED2i camera integration.
+- 🔗 https://github.com/saianup/zed2i_ros2_docker
+
+---
+
+### 10. LSLIDAR Docker
+
+- Dockerized ROS environment for LiDAR driver deployment.
+- 🔗 https://github.com/saianup/LSLIDAR_Docker
+
+---
+
 
 ## 📬 Contact
 
