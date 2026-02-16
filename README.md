@@ -9,7 +9,7 @@ This portfolio highlights my projects, experiments, and hands-on learning in bot
 
 - Programming Languages: Python, C++, C
 - Robotics Frameworks & Middleware: ROS, ROS 2, micro-ROS, OpenCV
-- Embedded & Edge Computing: ESP32, NVIDIA Jetson (Orin / Xavier)
+- Embedded & Edge Computing: ESP32, NVIDIA Jetson (Orin)
 - Perception & AI: YOLOv8, Machine Vision, Depth Cameras (Intel RealSense, Orbbec Astra)
 - Control Systems: PID Control, Kalman Filtering, Extended Kalman Filter (EKF)
 - Navigation & Robotics Algorithms: Localization, Differential Drive Kinematics, DWA Local Planning
